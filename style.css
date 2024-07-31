@@ -82,11 +82,6 @@ body, html {
     z-index: 999;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
 .nav-links {
     list-style: none;
     display: flex;
@@ -455,5 +450,39 @@ header {
 
     .about-us-capify-text h1 {
         font-size: 1.2em; /* Smaller font size for h1 on very small screens */
+    }
+}
+
+/* logo ni styling */
+.logo {
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
+    margin: 0 auto;  
+    width: 150px;    
+}
+
+
+@media (max-width: 1200px) {
+    .logo {
+        width: 120px; 
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 100px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 80px;  
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        width: 60px;  
     }
 }
