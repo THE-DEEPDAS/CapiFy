@@ -233,7 +233,7 @@ header {
 
 
 #scrollContainer {
-    height: 2000px; /* Adjust this height as needed for scrolling */
+    height: 1000px; /* aa size 2000 thi 1000 kari */
 }
 
 
@@ -459,7 +459,7 @@ header {
     height: auto;    
     display: block;  
     margin: 0 auto;  
-    width: 150px;    
+    width: 4em;    
 }
 
 
