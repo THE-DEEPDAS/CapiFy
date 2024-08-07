@@ -54,7 +54,18 @@ body {
 .navbar-nav .dropdown-menu {
   background-color: #22313f; /* Darker Blue */
   border: 1px solid #3498db; /* Bright Blue Border */
+  max-width: 100vw; /* Ensure it doesn't exceed the viewport width */
+  overflow-x: auto; /* Allow horizontal scrolling if necessary */
+  white-space: nowrap; /* Prevent line breaks in menu items */
 }
+
+/* Optional: Add padding to avoid dropdown items touching the edges */
+.navbar-nav .dropdown-menu {
+  padding: 10px;
+}
+
+
+
 
 .navbar-nav .dropdown-item {
   color: #ecf0f1; /* White */
@@ -738,8 +749,25 @@ button:active {
       font-size: 2.5em;
   }
 
+  .containerr{
+    visibility: hidden;
+  }
+
   .hero-content p {
       font-size: 1.2em;
   }
 }
-/* resource section layout */
+
+@media (max-width: 375px){
+  .hero-content h1 {
+    font-size: 2.5em;
+}
+
+.containerr{
+  visibility: hidden;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+}
+}
