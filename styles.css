@@ -625,51 +625,7 @@ body {
     transition: box-shadow 0.2s ease-in;
   }
  
-/* .social-icons i {
-    margin: 0 10px;
-    color: var(--primary-color);
-    transition: color 0.3s ease;
-}
 
-.social-icons i:hover {
-    color: var(--secondary-color);
-} */
- /* General Footer Styles */
-/* .text-center {
-    text-align: center;
-}
-
-.footer-link {
-    color: white;
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: block;
-}
-
-
-.social-links {
-    margin-top: 2px;
-}
-
-.social-icon {
-    margin: 10px;
-    color: white;
-    text-decoration: none;
-}
-
-.social-icon i {
-    transition: color 0.3s;
-}
-
-.social-icon:hover i {
-    color: #ddd; /* Change color on hover if desired */
-}
-
-/* #footer-padding {
-    padding-top: 20px; /* Adjust padding if needed */
-} 
-
-/* General Footer Styles */
 .text-center {
     text-align: center;
 }
