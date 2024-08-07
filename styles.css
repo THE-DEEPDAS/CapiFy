@@ -58,6 +58,9 @@
   }
 }
 
+/* .hero-content h1{
+  background: linear-gradient(to right, WHITE, whitesmoke, #758694);
+} */
 
 /* Body */
 body {
@@ -457,6 +460,7 @@ to {
   color: var(--text-color);
   position: relative;
   z-index: 1;
+  font-weight: 900px;
 }
 
 
