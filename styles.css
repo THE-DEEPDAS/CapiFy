@@ -174,74 +174,7 @@
     color: #acabab;
     font-weight: 850;
   }
-  
-  /* .hero-content .btn-primary {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-color:grey;
-    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .hero-content .btn-primary:hover {
-    background-color:  rgba(255, 255, 255, 0.05);
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 15px  #231143;
-    transform: scale(1.05);
-    
-  } */
-  
-  /* From Uiverse.io by mrhyddenn */ 
-  /* button-learnMore {
-    position: relative;
-    padding: 10px 20px;
-    border-radius: 7px;
-    border: 1px 387ADF;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-    background: transparent;
-    color: #fff;
-    overflow: hidden;
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-  }
-  
-  button:hover {
-    background:#003285;
-    box-shadow: 0 0 10px 3px rgba(0, 142, 236, 0.815);
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-  }
-  
-  button-learnMore :hover::before {
-    -webkit-animation: sh02 0.5s 0s linear;
-    -moz-animation: sh02 0.5s 0s linear;
-    animation: sh02 0.5s 0s linear;
-  }
-  button-learnMore ::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-  } */
-   /* From Uiverse.io by doniaskima */ 
-  
-   
-  
+
   /* From Uiverse.io by doniaskima */ 
   .btn-31,
   .btn-31 *,
@@ -449,11 +382,6 @@
     
   }
   
-  
-  
-  
-  
-  
   .containerr:hover .glass {
     transform: rotate(0deg);
     margin: 0 10px;
@@ -507,41 +435,7 @@
     display: flex;
     flex-direction: column;
   }
-  
-  /* Contact Section */
-  /* #contact h2 {
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #9e9595;
-  }
-  
-  #contact p {
-    margin-bottom: 30px;
-    color: #666;
-  }
-  
-  #contact .form-control {
-    border-radius: 0;
-    box-shadow: none;
-    border-color: #ddd;
-  }
-  
-  #contact .btn {
-    background-color: #007bff;
-    border-color: #007bff;
-    color: white;
-    border-radius: 0;
-    padding: 10px 20px;
-    font-size: 18px;
-  }
-  
-  .social-icons i {
-    margin: 0 10px;
-    color: #007bff;
-  } */
-  
-  
-  
+
   /* Contact Section */
   #contact{
     padding: 0 30px 0 30px;
@@ -584,23 +478,7 @@
     border: none;
     box-shadow: 0 0 5px grey;
   }
-  
-  /* #contact .btn { */
-    /* background-color: 	#003285;
-    border:none;
-   
-    color: var(--text-color);
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 18px;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-  }
-  
-  #contact .btn:hover {
-    background-color:rgb(10, 64, 211);
-    border:none;
-  } */
-  
+ 
   /* From Uiverse.io by mrhyddenn */ 
   #contact .btn{
     position: relative;
@@ -721,7 +599,7 @@
     position: relative;
   }
   
-  .footer a {
+  .footer-link {
     color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s ease;
