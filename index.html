@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,8 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
@@ -49,6 +52,7 @@
         /* Logo styling */
         .navbar .logo {
             max-width: 150px;
+           
             /* Adjust as needed */
             height: 2em;
         }
@@ -56,18 +60,25 @@
         /* About Us Section Styling */
         .about-us {
             background-color: #f8f9fa;
+           
             /* Light background color */
             padding: 60px 20px;
+           
             /* Add padding */
             text-align: center;
+           
             /* Center text */
             border-radius: 8px;
+           
             /* Rounded corners */
             margin: 40px auto;
+           
             /* Center horizontally and add margin */
             max-width: 1200px;
+           
             /* Increased max width */
             width: 90%;
+           
             /* Responsive width */
         }
 
@@ -122,6 +133,59 @@
         <h1>GROW!!</h1>
     </div>
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <img src="./img/logo kapayelo.jpg" class="logo" alt="Logo">
+            <a class="navbar-brand" href="#"
+                style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight:bolder;">CapiFy</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://capify-home-git-master-the-deepdas-projects.vercel.app/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://group-finance-manager.vercel.app/">SplitSmart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://calculators-pied.vercel.app/">Calculators</a>
+                    </li>
+
+                
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Trackers
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://balance-tracker-ashy.vercel.app/">Balance Tracker</a>
+                            <a class="dropdown-item" href="https://budget-tracker-k8yo.vercel.app/">Budget Tracker</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://financial-health-quiz.vercel.app/">Financial Health Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://blogs-section-three.vercel.app/">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://resources-section.vercel.app/">Resources</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">

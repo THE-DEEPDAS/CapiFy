@@ -1,14 +1,14 @@
 /* CSS Variables for easy theming */
 :root {
-    --primary-color: #3498db; /* Bright blue */
-    --secondary-color: #2c3e50; /* Dark blue/black */
-    --background-color: #101010;
-    --text-color: #ecf0f1;
-    --header-color: #333;
-    --gradient-start: #1e2a38; /* Dark blue/black */
-    --gradient-end: #3498db; /* Bright blue */
-    
-  }
+  --primary-color: #3498db; /* Bright blue */
+  --secondary-color: #2c3e50; /* Dark blue/black */
+  --background-color: #101010;
+  --text-color: #ecf0f1;
+  --header-color: #333;
+  --gradient-start: #1e2a38; /* Dark blue/black */
+  --gradient-end: #3498db; /* Bright blue */
+  
+}
 
   #loader{
     height: 100%;
@@ -853,19 +853,19 @@ ul {
         font-size: 2.5em;
     }
 
-    .containerr {
-        visibility : hidden;
-    }
-  
-    .hero-content p {
-        font-size: 1.2em;
-    }
+  .containerr {
+      visibility : hidden;
   }
 
-  @media (max-width: 375px){
-    .hero-content h1 {
-        font-size: 2.5em;
-    }
+  .hero-content p {
+      font-size: 1.2em;
+  }
+}
+
+@media (max-width: 375px){
+  .hero-content h1 {
+      font-size: 2.5em;
+  }
 
     .containerr {
         visibility : hidden;
