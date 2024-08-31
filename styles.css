@@ -875,4 +875,7 @@ ul {
         font-size: 1.2em;
     }
   }
-  /* resource section layout */
+  
+  .hits:hover{
+    color : var(--primary-color);
+  }
