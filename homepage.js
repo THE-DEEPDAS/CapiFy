@@ -61,17 +61,17 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         document.getElementById('formResponse').innerHTML = '<h4 class="text-danger">There was an error sending your message. Please try again later.</h4>';
     });
 });
-
 document.addEventListener("DOMContentLoaded", function() {
-    const apiUrl = 'https://api.countapi.xyz/hit/capify.vercel.app';
+    let visitCount = localStorage.getItem('page_hits');
 
-    fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('hit-counter').textContent = data.value;
-        })
-        .catch(error => {
-            console.error('Error fetching hit counter:', error);
-            document.getElementById('hit-counter').textContent = 'N/A';
-        });
+    if (visitCount === null) {
+        visitCount = 0;
+    } else {
+        visitCount = parseInt(visitCount);
+    }
+
+    visitCount += 1;
+    localStorage.setItem('page_hits', visitCount);
+
+    document.getElementById('hit-counter').textContent = visitCount;
 });
