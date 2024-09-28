@@ -70,54 +70,75 @@
   
   /* Navbar */
   .navbar {
-    background-color: rgba(6, 10, 14, 0.8); /* Slightly Transparent Dark Blue */
+    background-color: rgba(6, 10, 14, 0.8);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1rem;
   }
   
   .navbar-brand {
-    color: #ffffff; /* White */
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 2rem;
   }
   
   .navbar-brand:hover {
-    color: #ffffff; /* Bright Blue */
+    color: #ffffff;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 0.5rem;
   }
   
   .navbar-nav .nav-link {
-    color: #fbfbfb; /* White */
+    color: #fbfbfb;
     font-weight: bold;
     transition: color 0.3s ease, text-shadow 0.3s ease;
+    padding: 0.5rem 1rem;
   }
   
   .navbar-nav .nav-link:hover {
     color: #9fd6fa;
-    text-shadow: 0 0 10px rgba(52, 152, 219, 0.9); /* Slight Glow Effect */
+    text-shadow: 0 0 10px rgba(52, 152, 219, 0.9);
   }
   
   .navbar-nav .nav-link:active {
-    color: #111010; /* Bright White */
+    color: #111010;
   }
   
   /* Dropdown Menu */
   .navbar-nav .dropdown-menu {
-    background-color: #22313f; /* Darker Blue */
-    border: 1px solid #3498db; /* Bright Blue Border */
+    background-color: #22313f;
+    border: 1px solid #3498db;
   }
   
   .navbar-nav .dropdown-item {
-    color: #ecf0f1; /* White */
+    color: #ecf0f1;
+    padding: 0.5rem 1rem;
   }
   
   .navbar-nav .dropdown-item:hover {
-    background-color: #34495e; /* Slightly Lighter Dark Blue */
-    color: #ffffff; /* Bright White */
+    background-color: #34495e;
+    color: #ffffff;
   }
-  /* .nav-item a{
-    color: rgb(0, 0, 0);
-    text-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-  } */
-  .logo{
-    height: 3em;
-    margin: 0.5em;
+  .logo {
+    height: 2.5em;
+    margin-right: 0.5em;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 991px) {
+    .navbar-nav {
+      margin-left: 0;
+    }
+    
+    .navbar-nav .nav-item {
+      margin: 0.25rem 0;
+    }
   }
   
   /* Hero Section */
