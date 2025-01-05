@@ -193,7 +193,20 @@
 
 .mobile-menu-button {
     display: none;
-    margin-left: auto; /* Push to right on mobile */
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-left: auto;
+}
+
+.hamburger {
+    width: 24px;
+    height: 24px;
+    stroke: #fff; /* Make stroke white */
+    stroke-width: 2.5; /* Make lines thicker */
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3)); /* Add subtle glow */
 }
 
 @media (max-width: 768px) {
@@ -206,12 +219,17 @@
     }
 
     .mobile-menu-button {
-        display: block;
-        padding: 0.5rem;
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.1); /* Slight background */
+        padding: 0.6rem;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .mobile-menu-button:hover {
+        background: rgba(255, 255, 255, 0.2);
     }
 
     .nav-items {
