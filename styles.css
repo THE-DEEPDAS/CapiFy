@@ -68,79 +68,198 @@
     
   }
   
-  /* Navbar */
-  .navbar {
-    background-color: rgba(6, 10, 14, 0.8);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    padding: 0.5rem 1rem;
-  }
-  
-  .navbar-brand {
-    color: #ffffff;
-    font-size: 1.5rem;
+  /* Navbar Styles */
+  .nav {
+    background-color: #000000;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: flex-start; /* Changed to flex-start */
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0;
+    margin: 0;
+    width: auto; /* Changed from fixed width */
+}
+
+.logo {
+    height: 2rem;
+    width: auto;
+    margin: 0;
+}
+
+.brand-name {
+    font-size: 1.2rem;
     font-weight: bold;
+    color: #fff;
+    text-decoration: none;
     margin-right: 2rem;
-  }
-  
-  .navbar-brand:hover {
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: auto; /* Push to right */
+    justify-content: flex-end;
+}
+
+.nav-item {
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
     color: #ffffff;
-  }
-  
-  .navbar-nav {
-    margin-left: auto;
-  }
-  
-  .navbar-nav .nav-item {
-    margin: 0 0.5rem;
-  }
-  
-  .navbar-nav .nav-link {
-    color: #fbfbfb;
-    font-weight: bold;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-    padding: 0.5rem 1rem;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #9fd6fa;
-    text-shadow: 0 0 10px rgba(52, 152, 219, 0.9);
-  }
-  
-  .navbar-nav .nav-link:active {
-    color: #111010;
-  }
-  
-  /* Dropdown Menu */
-  .navbar-nav .dropdown-menu {
-    background-color: #22313f;
-    border: 1px solid #3498db;
-  }
-  
-  .navbar-nav .dropdown-item {
-    color: #ecf0f1;
-    padding: 0.5rem 1rem;
-  }
-  
-  .navbar-nav .dropdown-item:hover {
-    background-color: #34495e;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
     color: #ffffff;
-  }
-  .logo {
-    height: 2.5em;
-    margin-right: 0.5em;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 991px) {
-    .navbar-nav {
-      margin-left: 0;
+    opacity: 0.8;
+}
+
+.chevron {
+    width: 1rem;
+    height: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.chevron.rotate {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
+    background-color: #000000;
+    border: none;
+    border-radius: 0;
+    padding: 0.5rem 0;
+    z-index: 1001;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown.active {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.mobile-menu-button {
+    display: none;
+    margin-left: auto; /* Push to right on mobile */
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 1rem;
     }
-    
-    .navbar-nav .nav-item {
-      margin: 0.25rem 0;
+
+    .nav-content {
+        justify-content: space-between; /* Space between logo and hamburger */
     }
-  }
-  
+
+    .mobile-menu-button {
+        display: block;
+        padding: 0.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .nav-items {
+        display: none;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.95);
+        padding: 1rem;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .nav-items.mobile-active {
+        display: flex;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-button {
+        width: 100%;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .dropdown {
+        position: static;
+        width: 100%;
+        transform: none;
+        margin-top: 0;
+    }
+
+    .logo-section {
+        flex: 0 0 auto;
+        margin-right: 0;
+    }
+
+    .nav-items {
+        flex: none;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
   /* Hero Section */
   .hero-section {
     position: relative;
@@ -205,73 +324,8 @@
     font-weight: 850;
   }
   
-  /* .hero-content .btn-primary {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-color:grey;
-    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
-  }
   
-  .hero-content .btn-primary:hover {
-    background-color:  rgba(255, 255, 255, 0.05);
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 15px  #231143;
-    transform: scale(1.05);
-    
-  } */
-  
-  /* From Uiverse.io by mrhyddenn */ 
-  /* button-learnMore {
-    position: relative;
-    padding: 10px 20px;
-    border-radius: 7px;
-    border: 1px 387ADF;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-    background: transparent;
-    color: #fff;
-    overflow: hidden;
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-  }
-  
-  button:hover {
-    background:#003285;
-    box-shadow: 0 0 10px 3px rgba(0, 142, 236, 0.815);
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-  }
-  
-  button-learnMore :hover::before {
-    -webkit-animation: sh02 0.5s 0s linear;
-    -moz-animation: sh02 0.5s 0s linear;
-    animation: sh02 0.5s 0s linear;
-  }
-  button-learnMore ::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-  } */
-   /* From Uiverse.io by doniaskima */ 
-  
-   
-  /* From Uiverse.io by niat786 */ 
+   /* From Uiverse.io by niat786 */ 
 .learn-more-button {
   border-radius: .25rem;
   text-transform: uppercase;
@@ -460,40 +514,6 @@
   
 
   /* Contact Section */
-  /* #contact h2 {
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #9e9595;
-  }
-  
-  #contact p {
-    margin-bottom: 30px;
-    color: #666;
-  }
-  
-  #contact .form-control {
-    border-radius: 0;
-    box-shadow: none;
-    border-color: #ddd;
-  }
-  
-  #contact .btn {
-    background-color: #007bff;
-    border-color: #007bff;
-    color: white;
-    border-radius: 0;
-    padding: 10px 20px;
-    font-size: 18px;
-  }
-  
-  .social-icons i {
-    margin: 0 10px;
-    color: #007bff;
-  } */
-  
-  
-  
-  /* Contact Section */
 
   #contact{
     padding: 0 30px 0 30px;
@@ -536,96 +556,6 @@
     border: none;
     box-shadow: 0 0 5px grey;
   }
-  
-  /* #contact .btn { */
-    /* background-color: 	#003285;
-    border:none;
-   
-    color: var(--text-color);
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 18px;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-  }
-  
-  #contact .btn:hover {
-    background-color:rgb(10, 64, 211);
-    border:none;
-  } */
-  
-  /* From Uiverse.io by mrhyddenn */ 
-  /* #contact .btn{
-    position: relative;
-    padding: 10px 20px;
-    border-radius: 7px;
-    border: 1px 387ADF;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-    background: transparent;
-    color: #fff;
-    overflow: hidden;
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-  }
-  
-  #contact .btn:hover {
-    background:#003285;
-    box-shadow: 0 0 10px 3px rgba(0, 142, 236, 0.815);
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-  }
-  
-  #contact .btn:hover::before {
-    -webkit-animation: sh02 0.5s 0s linear;
-    -moz-animation: sh02 0.5s 0s linear;
-    animation: sh02 0.5s 0s linear;
-  }
-  
-  #contact .btn::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-  }
-  
-  @keyframes sh02 {
-    from {
-      opacity: 0;
-      left: 0%;
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  
-    to {
-      opacity: 0;
-      left: 100%;
-    }
-  }
-  
-  button:active {
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: box-shadow 0.2s ease-in;
-    -moz-transition: box-shadow 0.2s ease-in;
-    transition: box-shadow 0.2s ease-in;
-  } */
   
   
   /* From Uiverse.io by niat786 */ 
@@ -900,3 +830,4 @@ ul {
   .hits:hover{
     color : var(--primary-color);
   }
+
