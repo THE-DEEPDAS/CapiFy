@@ -27,7 +27,7 @@ const menuItems = {
     },
     login: {
         title: "Login",
-        items: [{ name: "Dashboard", link: "https://capify-updated-ev7i.vercel.app/" }]
+        items: [{ name: "Dashboard", link: "https://capify-webchefs.vercel.app/" }]
     }
 };
 
