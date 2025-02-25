@@ -8,9 +8,9 @@ const menuItems = {
     individual: {
         title: "Individual",
         items: [
-            { name: "Budget Tracker", link: "https://capify-updated-ev7i.vercel.app/budget-tracker" },
-            { name: "Balance Tracker", link: "https://capify-updated-ev7i.vercel.app/budget" },
-            { name: "Personalized Recommendations", link: "/recommendations" },
+            { name: "Budget Tracker", link: "https://capify-webchefs.vercel.app/budget-tracker" },
+            { name: "Balance Tracker", link: "https://capify-webchefs.vercel.app/budget" },
+            { name: "Personalized Recommendations", link: "https://recommendationcapify.vercel.app/" },
             { name: "Stock Market Prediction", link: "https://stockpredicto.streamlit.app/" },
             { name: "Resources", link: "https://resources-section.vercel.app/" },
             { name: "Blogs", link: "https://blogs-section-three.vercel.app/" },
@@ -19,7 +19,7 @@ const menuItems = {
     },
     groupUser: {
         title: "Group User",
-        items: [{ name: "Split Smart", link: "https://capify-updated-ev7i.vercel.app/splitwise" }]
+        items: [{ name: "Split Smart", link: "https://capify-webchefs.vercel.app//splitwise" }]
     },
     smallBusiness: {
         title: "Small Business",
